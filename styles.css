@@ -11,6 +11,7 @@
   
 body{
     font-family: "Poppins", sans-serif;
+    background-color: 	#f9fafc;
 }
 html{
     scroll-behavior: smooth;
@@ -49,7 +50,7 @@ header{
 }
 .nav-links li a{
     text-decoration: none;
-    color:rgb(49, 87, 87) ;
+    color: 	#1f2937;
     position: relative;
 }
 .nav-links li a::after{
@@ -252,17 +253,18 @@ header{
 .btn1{
     padding: 10px;
     text-decoration: none;
-    color: black;
-    background-color: transparent;
+    color: rgb(253, 251, 251);
+    background-color:  #4f46e5;
     border: 1px solid black;
     border-radius: 30px;
 }
 .btn1:hover{
-    background-color: rgba(25, 24, 24, 0.599);
+    background-color: #4338ca;
     color: rgb(244, 247, 249);
     font-weight: 600;
     border: none;
     transition: all 0.2s ease-in-out;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.641);
 }
 .btn2{
     padding: 10px;
@@ -344,6 +346,18 @@ header{
     filter : grayscale(0.5);
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    animation: shape 5s ease-in-out;
+
+}
+@keyframes shape {
+    from{
+        transform: scale(1.1);
+    }
+    to{
+        transform: skew(-45deg, 145deg) rotateY(0deg);
+        transform: scale(1) rotateY(360deg);
+       
+    }
 }
 .about-pic:hover{
     transform: scale(1.05);
@@ -377,6 +391,7 @@ header{
 .text{
     margin-top: 20px;
     font-size: 1.2rem;
+    
 }
 .about-title{
     font-size: 2rem;
@@ -400,13 +415,14 @@ header{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-column-gap: 30px;;
+    grid-column-gap: 30px;
 }
 .info{
     margin-top:20px;
     text-align: left;
     width: 75%;
     cursor: default;
+    color: #6b7280;
     
 }
 .arrow_icon{
