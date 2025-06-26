@@ -24,7 +24,6 @@ header{
     align-items: center;
     width: 100%;
 }
-
 .navbar{
     position: sticky;
     display: flex;
@@ -38,6 +37,7 @@ header{
     font-size: 1.6rem;
     font-weight: 600;
     color: rgb(59, 61, 61);
+    margin-right: 5px;
     cursor: default;
 }
 .navbar ul{
@@ -51,6 +51,7 @@ header{
 .nav-links li a{
     text-decoration: none;
     color: 	#1f2937;
+    justify-content: space-evenly;
     position: relative;
 }
 .nav-links li a::after{
@@ -302,7 +303,7 @@ header{
         gap: 10px
     }
     .profile-pic{
-        width: 350px;
+        width: 250px;
     }
     .btn-container{
         flex-direction: column;
@@ -471,4 +472,100 @@ header{
         width: 40px;
     }
     
+}
+
+/* Experience Section */
+
+#experience{
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(193, 190, 190, 0.174);
+    padding: 20px;
+}
+.experience-container{
+    min-width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    cursor: default;
+    
+}
+.main-content{
+    min-width: 90%;;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+.experience-title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2.1rem;
+    color: rgba(9, 9, 9, 0.951);
+}
+.sub-title{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+.block1 , .block2{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.448);
+    border: none;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    width: 90%;
+    padding: 20px;
+    cursor: default;
+}
+.block1:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.448);
+    border: none;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.block2:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.448);
+    border: none;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+}
+.experience-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+.icon_info h4{
+    font-size: 1.2rem;
+    font-weight: 600;;
+}
+.icon_info p{
+    font-size: 1rem;
+    margin-top: 2px;
+}
+article img{
+    margin:10px;
+}
+article{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .experience-container{
+        width: 100%;
+    }
+    .main-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block1 , .block2{
+        width: 80%;
+    }
+    .experience-info{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
