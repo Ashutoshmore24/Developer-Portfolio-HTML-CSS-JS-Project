@@ -161,7 +161,7 @@ header{
     
 }
 
-/* section */
+/* Hero Section */
 .container{
     display: flex;
     justify-content:center;
@@ -317,7 +317,6 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(200, 194, 194, 0.17);
 }
    
 .section-container{
@@ -392,7 +391,7 @@ header{
 .text{
     margin-top: 20px;
     font-size: 1.2rem;
-    
+    letter-spacing: 0.1rem;
 }
 .about-title{
     font-size: 2rem;
@@ -568,4 +567,97 @@ article{
     .experience-info{
         grid-template-columns: repeat(1,1fr);
     }
+}
+
+/* Project Section */
+#project{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+.project-container{
+    min-width: 80%;
+    margin: 0 auto;
+    align-items: center;
+}
+.project-title{
+    text-align: center;
+    padding: 5px;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+.project-card{
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 1rem;
+}.project-image{
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+}
+.project-image:hover {
+    transform: scale(1.0);
+    box-shadow: 0px 3px 5px rgba(247, 246, 246, 0.808);
+    transition: all 300ms ease-in-out;
+}
+.project-card:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.479);
+    transition: all 300ms ease-in-out;
+}
+.project-card h3,p{
+    text-align: center;
+    cursor: default;
+}
+.project-card h3{
+    font-size: 1.7rem;
+}
+.project-card p{
+    font-size: 1.1rem;
+    color: #1f2937;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+    margin: 0 auto;
+    width: 70%;
+}
+.card-btn1, .card-btn2{
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.card-btn1{
+    background-color: #f9fafc;
+    color:black;
+    margin-left: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .project-container{
+        width: 100%;
+    }
+    .project-content{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+    }
+    .buttons{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card-btn1{
+        margin-left: 0;
+    }
+    
 }

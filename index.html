@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar" id="home">
         <div class="logo">John Doe</div>
         <div class="links">
@@ -15,8 +15,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
         </nav>
@@ -34,14 +34,14 @@
                 <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                 <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
         </nav>
     </header>
 
-    <section class="container">
+    <section id="home" class="container">
         <div  class="pic-container">
             <img src="assets/profile.png" alt="Profile Picture" class="profile-pic" width="500">
         </div>
@@ -174,6 +174,42 @@
             </div>
         </div>
     </section>
+
+    <section id="project">
+        <div class="project-container">
+            <p class="text">Explore My Projects....</p>
+            <h1 class="project-title">Projects</h1>
+            <div class="project-content">
+                <div class="project-card">
+                    <img src="assets/project 1.webp" alt="Project 1" class="project-image" width="300">
+                    <h3>Project One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, laboriosam vero! Eveniet sunt commodi laudantium facere? Enim, odio numquam. Iure totam laudantium adipisci illo vel?</p>
+                    <div class="buttons">
+                    <button class="btn2 card-btn1" onclick="location.href='https://www.github.com'">Github</button>
+                    <button class="btn2 card-btn2" onclick="location.href='https://www.github.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/project 2.png" alt="Project 2" class="project-image" width="300">
+                    <h3>Project Two</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti totam dolores esse fugit aspernatur reiciendis delectus cumque labore! Sed incidunt, exercitationem expedita nulla sit sint.</p>
+                    <div class="buttons">
+                    <button class="btn2 card-btn1" onclick="location.href='https://www.github.com'">Github</button>
+                    <button class="btn2 card-btn2" onclick="location.href='https://www.github.com'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="assets/project 3.png" alt="Project 3" class="project-image" width="300">
+                    <h3>Project Three</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At culpa quod facilis enim consequuntur natus esse molestiae doloremque ex? Quasi doloremque exercitationem totam eius dolor!</p>
+                    <div class="buttons">
+                    <button class="btn2 card-btn1" onclick="location.href='https://www.github.com'">Github</button>
+                    <button class="btn2 card-btn2" onclick="location.href='https://www.github.com'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
