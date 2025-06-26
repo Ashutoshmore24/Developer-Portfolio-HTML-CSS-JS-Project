@@ -490,7 +490,7 @@ header{
     
 }
 .main-content{
-    min-width: 90%;;
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -513,7 +513,7 @@ header{
     border: none;
     background-color: #ffffff;
     border-radius: 2rem;
-    width: 90%;
+    width: 100%;
     padding: 20px;
     cursor: default;
 }
@@ -562,7 +562,7 @@ article{
         align-items: center;
     }
     .block1 , .block2{
-        width: 80%;
+        width: 100%;
     }
     .experience-info{
         grid-template-columns: repeat(1,1fr);
