@@ -283,7 +283,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 .social-icons a img{
     width: 35px;
@@ -300,13 +300,34 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px
+        gap: 10px;
+        width: 100%
     }
     .profile-pic{
         width: 250px;
     }
     .btn-container{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .btn1,.btn2{
+        flex-shrink: 0;
+    }
+}
+@media screen and (max-width:312px) {
+    .btn-container{
+        flex-wrap: wrap;
+    }
+    .container{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%
+    }
+    .profile-pic{
+        width: 200px;
     }
 }
 
@@ -553,6 +574,7 @@ article{
     align-items: center;
 }
 
+
 @media screen and (max-width: 768px) {
     .experience-container{
         width: 100%;
@@ -645,11 +667,24 @@ article{
     margin-left: 10px;
 }
 
-@media screen and (max-width:768px) {
-    .project-container{
-        width: 100%;
+@media screen and (max-width:1200px) {
+    .project-card{
+        
+        margin: 0 auto;
     }
     .project-content{
+        width: 500px;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 20px;
+    }
+    
+}
+@media screen and (max-width:768px) {
+    .project-container{
+        width: 80%;
+    }
+    .project-content{
+        width: fit-content;
         grid-template-columns: repeat(1,1fr);
         grid-gap: 30px;
     }
@@ -661,10 +696,10 @@ article{
     }
 }
 
+
 /* Contact Section */
 #contact{
     width: 100%;
-    background-color: #e2e5e9d2;
     margin-top: 50px;
     padding: 20px;
 }
@@ -757,4 +792,42 @@ label{
         transform: translateX(0);
     }
     
+}
+
+/* footer */
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #d1d2d4b5;
+   
+}
+.copyright{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.rights{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #1f2937e1;
+}
+.links  h3{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #171717;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.nav-links li{
+    list-style-type:none;
+    padding: 10px;
+    margin-bottom: 20px;
 }
