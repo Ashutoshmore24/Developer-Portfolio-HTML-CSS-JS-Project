@@ -811,7 +811,7 @@ footer{
     font-weight: 500;
     color: #1f2937e1;
 }
-.links  h3{
+.foot_links  h3{
     text-align: center;
     margin-top: 15px;
     font-size: 1.6rem;
@@ -820,14 +820,32 @@ footer{
     letter-spacing: 2px;
     cursor: default;
 }
-.nav-links{
+.footer-links{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
-.nav-links li{
+.footer-links a{
+    text-decoration: none;
+    color: rgba(37, 36, 36, 0.929);
+}
+.footer-links li{
     list-style-type:none;
     padding: 10px;
     margin-bottom: 20px;
+}
+.footer-links li:hover{
+    color: black;
+    font-weight: 500;
+    text-decoration: underline;
+}
+@media screen and (max-width:768px) {
+    .footer-links{
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 3px;
+    }
+    
+    
 }
