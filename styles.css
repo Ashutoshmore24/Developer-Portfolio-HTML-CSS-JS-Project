@@ -288,7 +288,7 @@ header{
     border-radius: 50%;
     animation: card-appear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 10%;
 }
 .social-icons a img:hover{
     transform: scale(1.05);
@@ -420,7 +420,7 @@ header{
         transform: scale(0.3) translateY(100px);
     }
     50%{
-        opacity: 0.4;
+        opacity: 0;
         transform: scale(0.5);
     }
     100%{
@@ -455,7 +455,6 @@ header{
         opacity: 1;
         transform:translateX(0) scale(1);
     }
-    
 }
 
 .about-title{
@@ -467,13 +466,11 @@ header{
     animation: title-appear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
-
 }
 .text ,.about-title{
     text-align: center;
     cursor: default;
-}
-   
+}  
 .icon{
     margin-top: 5px;
     width: 40px;
@@ -496,19 +493,6 @@ header{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
-.arrow_icon{
-    width: 5px;
-    position: absolute;
-    right: 0rem;
-    bottom:0rem;
-    border-radius: 50%;
-    width: 50px;
-    cursor: pointer;
-    animation: card-appear both;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
-}
-
 
 @media screen and (max-width: 768px) {
     .section-container{
@@ -540,11 +524,6 @@ header{
     .details{
         padding: 10px;
     }
-    .arrow_icon{
-        position: relative;
-        width: 40px;
-    }
-    
 }
 
 /* Experience Section */
@@ -676,7 +655,7 @@ article{
     font-weight: 600;
     animation: title-appear both;
     animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation-range: entry 0% cover 20%;
 }
 .project-content{
     display: grid;
