@@ -1,6 +1,7 @@
 # Portfolio-Website Project
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
-Welcome to my **Developer Portfolio Website**, built using only **HTML** and **CSS** to showcase my journey, skills, and the projects I've worked on.
+Welcome to my **Developer Portfolio Website**, built using only **HTML**,**CSS** and little **JavaSxcript** to showcase the journey, skills I'm working on.
 
 ## ✨ Features
 
@@ -17,8 +18,8 @@ Welcome to my **Developer Portfolio Website**, built using only **HTML** and **C
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)  
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)  
 
 
 ## 🚀 Live Demo
@@ -36,7 +37,7 @@ If you'd like to get in touch, feel free to reach out:
 
 ## 📜 License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the MIT License
 
 
 Thank You !!!
