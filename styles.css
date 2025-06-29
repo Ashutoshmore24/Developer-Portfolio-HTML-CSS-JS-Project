@@ -208,17 +208,9 @@ header{
     justify-content:center;
     align-items: center;
     width: 50%;
-    animation: fade 0.8s ease;
-}
-@keyframes fade {
-    from{
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    to{
-        opacity: 1;
-    }
-    
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 .greeting{
     font-size: 1.2rem;
@@ -226,6 +218,9 @@ header{
     margin-bottom: 5px;
     text-align: center;
     cursor: default;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 .title{
     font-size: 2rem;
@@ -233,6 +228,9 @@ header{
     color: rgba(16, 15, 15, 0.951);
     text-align: center;
     cursor: default;
+    animation: title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 .description{
     font-size: 1.3rem;
@@ -288,6 +286,9 @@ header{
 .social-icons a img{
     width: 35px;
     border-radius: 50%;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .social-icons a img:hover{
     transform: scale(1.05);
@@ -367,21 +368,13 @@ header{
     filter : grayscale(0.5);
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    animation: shape 5s ease-in-out;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
-}
-@keyframes shape {
-    from{
-        transform: scale(1.1);
-    }
-    to{
-        transform: skew(-45deg, 145deg) rotateY(0deg);
-        transform: scale(1) rotateY(360deg);
-       
-    }
-}
 .about-pic:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
     filter: grayscale(0);
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.448);
 }
@@ -391,6 +384,9 @@ header{
     text-align: center;
     padding: 20px 30px;
     cursor: default;
+    animation: sub-title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .details:hover{
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.448);
@@ -413,13 +409,65 @@ header{
     margin-top: 20px;
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
 }
+@keyframes text-appear {
+    0%{
+        opacity: 0;
+        transform: scale(0.3) translateY(100px);
+    }
+    50%{
+        opacity: 0.4;
+        transform: scale(0.5);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+    
+}
+@keyframes title-appear {
+    0%{
+        opacity: 0;
+        transform: translateX(-300px) scale(0.5);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0) scale(1);
+    }
+    
+}
+@keyframes sub-title-appear {
+    0%{
+        opacity: 0;
+        transform: translateX(200px) scale(0.5);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform:translateX(0) scale(1);
+    }
+    
+}
+
 .about-title{
     font-size: 2rem;
     font-weight: 600;
     color: rgba(9, 9, 9, 0.951);
     text-decoration: underline;
     text-underline-offset: 10px;
+    animation: title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+
 }
 .text ,.about-title{
     text-align: center;
@@ -443,8 +491,10 @@ header{
     text-align: left;
     width: 75%;
     cursor: default;
-    color: #6b7280;
-    
+    color: #1f2020fc;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .arrow_icon{
     width: 5px;
@@ -454,6 +504,9 @@ header{
     border-radius: 50%;
     width: 50px;
     cursor: pointer;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
 
 
@@ -522,6 +575,9 @@ header{
     font-weight: 600;
     font-size: 2.1rem;
     color: rgba(9, 9, 9, 0.951);
+    animation: title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .sub-title{
     text-align: center;
@@ -537,6 +593,10 @@ header{
     width: 100%;
     padding: 20px;
     cursor: default;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
 }
 .block1:hover{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.448);
@@ -558,11 +618,18 @@ header{
 }
 .icon_info h4{
     font-size: 1.2rem;
-    font-weight: 600;;
+    font-weight: 600;
+    animation: sub-title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .icon_info p{
     font-size: 1rem;
     margin-top: 2px;
+    text-align: left;
+    animation: title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 article img{
     margin:10px;
@@ -607,6 +674,9 @@ article{
     padding: 5px;
     font-size: 2.1rem;
     font-weight: 600;
+    animation: title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .project-content{
     display: grid;
@@ -615,12 +685,32 @@ article{
     width: 90%;
     margin: 0 auto;
 }
+@keyframes card-appear {
+    0%{
+        opacity: 0;
+        transform: translateY(200px) scale(0.5);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0) scale(1);
+    }
+    
+}
+
 .project-card{
     margin-top: 20px;
     padding: 20px;
     border: 1px solid black;
     border-radius: 1rem;
-}.project-image{
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+.project-image{
     width: 100%;
     height: 300px;
     border-radius: 1rem;
@@ -717,12 +807,18 @@ article{
     font-size: 2.1rem;
     font-weight: 600;
     margin-bottom: 10px;
+    animation: title-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .form-group{
     width: 100%;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 label{
     font-size: 1rem;
@@ -774,6 +870,9 @@ label{
     border-radius: 4px;
     font-size: 1rem;
     cursor: pointer;
+    animation: card-appear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -799,13 +898,11 @@ footer{
     width: 100%;
     box-sizing: border-box;
     background-color: #d1d2d4b5;
-   
 }
 .copyright{
     padding: 10px;
     margin-top: 20px;
 }
-
 .rights{
     font-size: 1rem;
     font-weight: 500;
@@ -846,6 +943,4 @@ footer{
         flex-wrap: wrap;
         gap: 3px;
     }
-    
-    
 }
